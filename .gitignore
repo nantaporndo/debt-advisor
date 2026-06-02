@@ -1,0 +1,38 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js Build Output
+/.next/
+/out/
+
+# Production Build
+/build
+
+# Testing
+/coverage
+
+# Debugging Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local Environment Variables
+.env*.local
+.env
+# Optional: exclude specific production env files if they contain secrets
+# .env.production
+# .env.development
+
+# Vercel Deployment Platform
+.vercel
+
+# TypeScript Compilation Metadata
+*.tsbuildinfo
+next-env.d.ts
+
+# Operating System Files
+.DS_Store
+Thumbs.db
