@@ -6,6 +6,7 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 FROM base AS deps
 WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
+RUN printf 'allowBuilds:\n  sharp: true\n' > pnpm-workspace.yaml
 RUN pnpm install --frozen-lockfile
 
 # --- build stage ---
