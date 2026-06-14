@@ -12,6 +12,7 @@ RUN pnpm install --frozen-lockfile
 # --- build stage ---
 FROM base AS builder
 WORKDIR /app
+ENV CI=true
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN pnpm build
